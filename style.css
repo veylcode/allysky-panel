@@ -1,0 +1,153 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, 'Segoe UI', Arial, sans-serif;
+  color: #daf7f9;
+  background: #0b1626;
+  line-height: 1.5;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-height: 100svh;
+  background: radial-gradient(ellipse at 90% 15%, #0c2543 0, transparent 46%);
+}
+main {
+  max-width: 1152px;
+  min-height: 100svh;
+  padding: 48px 56px 24px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 14px;
+  font-weight: 750;
+  letter-spacing: 0.15em;
+}
+.brand img {
+  image-rendering: auto;
+}
+section {
+  flex: 1;
+  padding: 104px 0 112px;
+  max-width: 720px;
+}
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  color: #54e3f9;
+}
+h1 {
+  font-size: clamp(46px, 7vw, 82px);
+  letter-spacing: -0.065em;
+  line-height: 1.08;
+  font-weight: 650;
+  margin: 22px 0 26px;
+}
+h1 span {
+  color: #15b4f3;
+}
+p {
+  font-size: 17px;
+  max-width: 390px;
+  color: #b4d7e9;
+  margin: 0 0 34px;
+}
+.button {
+  display: inline-flex;
+  gap: 60px;
+  align-items: center;
+  background: #15b4f3;
+  color: #0b1626;
+  padding: 16px 22px;
+  border-radius: 9px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 750;
+  transition:
+    background 0.2s,
+    transform 0.2s;
+}
+.button:hover {
+  background: #54e3f9;
+  transform: translateY(-1px);
+}
+a:focus-visible {
+  outline: 3px solid #daf7f9;
+  outline-offset: 5px;
+}
+.access {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 32px;
+  color: #9ebbd3;
+}
+.lock {
+  width: 34px;
+  height: 34px;
+  border: 1px solid #0c335b;
+  border-radius: 9px;
+  text-align: center;
+  padding-top: 3px;
+  font-size: 19px;
+  color: #54e3f9;
+}
+.access strong {
+  display: block;
+  color: #b4d7e9;
+  font-size: 12px;
+  font-weight: 500;
+}
+.access small {
+  display: block;
+  margin-top: 3px;
+  font-size: 11px;
+}
+footer {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  padding-top: 24px;
+  border-top: 1px solid #0c2543;
+  color: #24577d;
+  font-size: 11px;
+}
+footer a {
+  color: #b4d7e9;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #54e3f9;
+}
+@media (max-width: 600px) {
+  main {
+    padding: 30px 24px 20px;
+  }
+  section {
+    padding: 90px 0;
+  }
+  p {
+    font-size: 15px;
+  }
+  .button {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  footer {
+    font-size: 10px;
+    flex-wrap: wrap;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
