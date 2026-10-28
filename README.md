@@ -1,8 +1,3 @@
-# AllySky — вход в панель
+# AllySky
 
-Статическая страница входа GitHub Pages. Discord OAuth2, проверка владельца, API и база находятся на защищённом VDS. В этом репозитории нет исходников бота, токенов, приватных настроек или административного API.
-
-Страница: https://veylcode.github.io/allysky-panel/
-Панель: https://5.83.140.108/
-
-Прежний адрес pixel-hell-panel сохранён как совместимый вход.
+Public entry pages only. Authentication and bot controls run on the private application server.
